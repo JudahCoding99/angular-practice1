@@ -1,4 +1,7 @@
 <!-- Filter componets filters the game -->
+<!-- mat-form-field from angular material-->
+<!-- mat-select creates a drop down text box, toholdon the different sorting options-->
+<!-- mat-option are the different options for sorting games-->
 <div class="filters">
     <mat-form-field>
         <mat-label>Sort</mat-label>
@@ -19,6 +22,11 @@
 </div>
 
 <!-- creates wrapper for games-->
+<!-- 'games' div means there will be multiple games that it will hold-->
+<!-- 'game' div formats each individual game in the overall 'games' div-->
+<!-- thumb-container div will hold am image of the game if availabe(ngIf) -->
+<!-- game description div will be underneatch thumbcontainer and it will show the game name, 
+    and the platforms the games can be played-->
 <div class="games">
     <ng-container *ngFor="let game of games">
         <div class="game" (click)="openGameDetails(game.id)">

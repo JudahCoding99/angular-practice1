@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 
 // Creates routes for the home component
 // Two paths default path and search path
+//Allows all seaches to land on the homeComponent
 const routes: Routes = [
   {
     path: '',

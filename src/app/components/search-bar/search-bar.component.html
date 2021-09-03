@@ -1,5 +1,11 @@
 <!-- button tag submits the form -->
 <!-- ngSubmit handles the submit of the search-bar form-->
+<!-- search container includes button, text box, and logo-->
+<!-- Input element is used for searching -->
+<!-- once button is clicked the form, "search-form", is submitted-->
+<!-- Clicking on logo redirects to home page hence why router link is a slash-->
+<!-- ngSumbit event handles the submitting of the form and the actions performed
+during the handling is perfomed by the onSumbit method in searchbar .ts file-->
 <div class="search-container">
     <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
         <span class="logo" routerLink="/">NgVGDB</span>

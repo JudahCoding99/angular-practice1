@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
-
+  //Inject Angular Router as a dependency
   // Router redirects application to search page 
   //as well as passesa the value of input field from form
   constructor(private router: Router) { }
@@ -16,6 +16,10 @@ export class SearchBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //onSubmit method
+  //recieves form as an argument
+  //use the router to navigate to a search page
+  //From the form we will extract the value and the search
   onSubmit(form: NgForm){
     this.router.navigate(['search', form.value.search]);
   }
